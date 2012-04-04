@@ -1,4 +1,4 @@
-(ns {{name}}.client.main
+(ns {{name}}.client.core
   (:require [noir.cljs.client.watcher :as watcher]
             [clojure.browser.repl :as repl]
             [crate.core :as crate])

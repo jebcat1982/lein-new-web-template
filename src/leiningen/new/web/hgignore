@@ -1,6 +1,8 @@
+syntax:glob
 pom.xml
 *jar
 /lib/
+db.sqlite3
 /classes/
 .lein-deps-sum
 resources/public/cljs/

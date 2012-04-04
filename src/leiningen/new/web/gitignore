@@ -1,0 +1,7 @@
+pom.xml
+db.sqlite3
+*jar
+/lib/
+/classes/
+.lein-deps-sum
+resources/public/cljs/

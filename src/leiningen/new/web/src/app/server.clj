@@ -1,8 +1,11 @@
 (ns {{name}}.server
   (:require [noir.server :as server]
-            [noir.cljs.core :as cljs]))
+            [noir.cljs.core :as cljs])
+  (:use [metrics.ring.instrument :only (instrument)]))
 
 (server/load-views-ns '{{name}}.views)
+(server/add-middleware instrument)
+
 (def cljs-options {:advanced {:externs ["externs/jquery.js"]}})
 
 (defn -main [& m]

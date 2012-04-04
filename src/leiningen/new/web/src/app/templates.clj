@@ -10,7 +10,7 @@
     [:head
      [:title title " / {{name}}"]
      (include-css "/bootstrap/styles/bootstrap.css")
-     (include-css "/bootstrap/styles/bootstrap-responsive.css")
+     (include-css "/bootstrap/styles/bootstrap_responsive.css")
      (include-css "/styles/style.less" {:rel "stylesheet/less"})
      (include-js "/bootstrap/scripts/bootstrap.js")
      (include-js "/scripts/less.js")]

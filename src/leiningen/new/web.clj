@@ -12,7 +12,7 @@
     (->files data
              ; Version control files
              [".gitignore" (render "gitignore" data)]
-             [".hgignore" (render "hgnignore" data)]
+             [".hgignore" (render "hgignore" data)]
 
              ; Boilerplate
              ["project.clj" (render "project.clj" data)]
@@ -24,11 +24,11 @@
              ["resources/public/scripts/less.js" (render "resources/public/less.js")]
 
              ; Twitter Bootstrap
-             ["resources/public/bootstrap/img/glyphicons-halflings-white.png" (render "resources/public/bootstrap/img/glyphicons-halflings-white.png")]
-             ["resources/public/bootstrap/img/glyphicons-halflings.png" (render "resources/public/bootstrap/img/glyphicons-halflings.png")]
+             ["resources/public/bootstrap/img/glyphicons_halflings_white.png" (render "resources/public/bootstrap/img/glyphicons_halflings_white.png")]
+             ["resources/public/bootstrap/img/glyphicons_halflings.png" (render "resources/public/bootstrap/img/glyphicons_halflings.png")]
              ["resources/public/bootstrap/scripts/bootstrap.js" (render "resources/public/bootstrap/scripts/bootstrap.js")]
              ["resources/public/bootstrap/styles/bootstrap.css" (render "resources/public/bootstrap/styles/bootstrap.css")]
-             ["resources/public/bootstrap/styles/bootstrap-responsive.css" (render "resources/public/bootstrap/styles/bootstrap-responsive.css")]
+             ["resources/public/bootstrap/styles/bootstrap_responsive.css" (render "resources/public/bootstrap/styles/bootstrap_responsive.css")]
 
              ; Clojurescript stub
              ["src/{{sanitized}}/client/core.cljs" (render "src/app/client/core.cljs" data)]

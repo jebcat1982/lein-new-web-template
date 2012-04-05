@@ -4,5 +4,6 @@ db.sqlite3
 *jar
 /lib/
 /classes/
+/native/
 .lein-deps-sum
 resources/public/cljs/

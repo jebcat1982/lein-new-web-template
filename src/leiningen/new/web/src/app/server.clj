@@ -3,6 +3,7 @@
             [noir.cljs.core :as cljs])
   (:use [metrics.ring.instrument :only (instrument)]))
 
+
 (server/load-views-ns '{{name}}.views)
 (server/add-middleware instrument)
 

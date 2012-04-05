@@ -37,7 +37,7 @@
              ["src/{{sanitized}}/views/core.clj" (render "src/app/views/core.clj" data)]
 
              ; Templates
-             ["src/{{sanitized}}/templates.clj" (render "src/app/server.clj" data)]
+             ["src/{{sanitized}}/templates.clj" (render "src/app/templates.clj" data)]
 
              ; Lobos and Korma
              ["src/lobos/migrations.clj" (render "src/lobos/migrations.clj" data)]

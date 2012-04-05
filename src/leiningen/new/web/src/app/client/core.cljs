@@ -5,21 +5,15 @@
   (:use [jayq.core :only [$ append]])
   (:use-macros [crate.macros :only [defpartial]]))
 
-;;************************************************
-;; Dev stuff
-;;************************************************
 
+; Development -----------------------------------------------------------------
 (watcher/init)
 ;;(repl/connect "http://localhost:9000/repl")
 
-;;************************************************
-;; Code
-;;************************************************
-
-(def $content ($ :#content))
+; Main ------------------------------------------------------------------------
+(def $content ($ :#container))
 
 (defpartial up-and-running []
-  [:p.alert "CLJS is compiled and active... Time to build something!"])
+  [:div#clojurescript-status.alert.alert-success "✔ CLJS"])
 
 (append $content (up-and-running))
-
